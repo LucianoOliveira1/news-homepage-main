@@ -1,0 +1,385 @@
+@import url("https://fonts.googleapis.com/css2?family=Inter:wght@400;700;800&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  padding: 50px 10%;
+  width: 100%;
+  height: 100vh;
+  font-family: "Inter", sans-serif;
+}
+
+header {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: nowrap;
+  justify-content: space-between;
+}
+header .menu_icon {
+  display: none;
+  width: 32px;
+  height: 32px;
+  background-image: url(assets/images/icon-menu.svg);
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+header .menu li {
+  text-decoration: none;
+  list-style: none;
+  display: inline-block;
+  margin-left: 30px;
+}
+header .menu li a {
+  text-decoration: none;
+  color: hsl(240deg, 100%, 5%);
+}
+header .menu li a:hover {
+  color: hsl(5deg, 85%, 63%);
+}
+header .menu li a:active {
+  color: hsl(35deg, 77%, 62%);
+}
+
+.container {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+}
+
+.popular {
+  display: inline-block;
+  max-width: 65%;
+  margin-top: 50px;
+}
+.popular .section_bg {
+  width: 100%;
+  height: 50%;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+.popular h1 {
+  display: inline-block;
+  max-width: 40%;
+  font-size: 3rem;
+  font-weight: 800;
+  margin-top: 20px;
+  line-height: 3.7rem;
+  color: hsl(240deg, 100%, 5%);
+}
+.popular .readmore {
+  max-width: 52%;
+  float: right;
+  margin-top: 20px;
+  line-height: 1.6rem;
+  font-size: 16px;
+  color: hsl(236deg, 13%, 42%);
+  font-weight: 400;
+}
+.popular .readmore button {
+  margin-top: 25px;
+  width: 50%;
+  height: 3rem;
+  background-color: hsl(5deg, 85%, 63%);
+  border: none;
+  color: hsl(36deg, 100%, 99%);
+  font-weight: 800;
+  letter-spacing: 0.3rem;
+  cursor: pointer;
+}
+.popular .readmore button:hover {
+  background-color: hsl(240deg, 100%, 5%);
+  color: hsl(36deg, 100%, 99%);
+}
+
+.new_section {
+  max-width: 32%;
+  float: left;
+  margin: 50px 0px 65px 30px;
+  padding: 20px;
+  color: white;
+  background-color: hsl(240deg, 100%, 5%);
+}
+.new_section h2 {
+  color: hsl(35deg, 77%, 62%);
+  font-size: 2.5rem;
+  font-weight: 700;
+  margin-bottom: 20px;
+}
+.new_section .news {
+  margin-bottom: 30px;
+}
+.new_section .news_end {
+  margin-bottom: 0px;
+}
+.new_section p {
+  color: hsl(233deg, 8%, 79%);
+  font-size: 14px;
+  margin: 15px 0px 30px 0px;
+}
+
+.trending_section {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  margin-bottom: 50px;
+  -moz-column-gap: 5%;
+       column-gap: 5%;
+}
+.trending_section .trading {
+  display: flex;
+  flex-direction: row;
+  -moz-column-gap: 5%;
+       column-gap: 5%;
+}
+.trending_section .trading img {
+  width: 23%;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+.trending_section .trading .trading_content_box {
+  width: 56%;
+}
+.trending_section .trading .trading_content_box h3 {
+  color: hsl(233deg, 8%, 79%);
+  font-size: 1.5rem;
+}
+.trending_section .trading .trading_content_box h4 {
+  font-size: 14px;
+  margin: 10px 0px;
+}
+.trending_section .trading .trading_content_box h4 a {
+  text-decoration: none;
+  color: hsl(240deg, 100%, 5%);
+}
+.trending_section .trading .trading_content_box h4 a:hover {
+  color: hsl(5deg, 85%, 63%);
+}
+.trending_section .trading .trading_content_box p {
+  font-size: 12px;
+  color: hsl(236deg, 13%, 42%);
+  line-height: 20px;
+}
+
+@media (max-width: 1250px) {
+  .popular {
+    display: inline-block;
+    max-width: 65%;
+  }
+  .popular h1 {
+    display: inline-block;
+    max-width: 45%;
+    font-size: 2.5rem;
+    font-weight: 800;
+    margin-top: 20px;
+    line-height: 3.7rem;
+    color: hsl(240deg, 100%, 5%);
+  }
+  .new_section {
+    max-width: 30%;
+  }
+  .new_section h2 {
+    color: hsl(35deg, 77%, 62%);
+    font-size: 2.3rem;
+  }
+  .new_section p {
+    color: hsl(233deg, 8%, 79%);
+    font-size: 13px;
+  }
+  .trending_section .trading img {
+    width: 50%;
+  }
+  .trending_section .trading .trading_content_box h3 {
+    font-size: 2rem;
+  }
+  .trending_section .trading .trading_content_box h4 {
+    font-size: 1.1rem;
+    font-weight: 800;
+  }
+  .trending_section .trading .trading_content_box p {
+    font-size: 0.8rem;
+    color: hsl(236deg, 13%, 42%);
+    line-height: 1.8em;
+  }
+}
+@media (max-width: 750px) {
+  header {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    justify-content: space-between;
+  }
+  header .menu_icon {
+    display: inline-block;
+    position: absolute;
+    right: 5%;
+    width: 32px;
+    height: 32px;
+    background-image: url(assets/images/icon-menu.svg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    z-index: 2;
+  }
+  header .menu_shadow {
+    display: none;
+    width: 100%;
+    height: 320vh;
+    background-color: rgba(0, 0, 0, 0.5);
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 0;
+    -webkit-animation: fade 500ms;
+            animation: fade 500ms;
+  }
+  header .menu {
+    display: none;
+  }
+  header .open {
+    display: block;
+    position: absolute;
+    top: 0;
+    right: 0;
+    background-color: white;
+    width: 75%;
+    height: 100vh;
+    -webkit-animation: fade 300ms;
+            animation: fade 300ms;
+    border-radius: 0px 0px 0px 10px;
+  }
+  header .open ul {
+    padding: 50% 5%;
+  }
+  header .open li {
+    text-decoration: none;
+    list-style: none;
+    display: block;
+    margin-left: 30px;
+    margin-bottom: 20px;
+  }
+  header .open li a {
+    text-decoration: none;
+    font-size: 1.4rem;
+    font-weight: 700;
+    color: hsl(240deg, 100%, 5%);
+  }
+  header .open li a:hover {
+    color: hsl(5deg, 85%, 63%);
+  }
+  header .open li a:active {
+    color: hsl(35deg, 77%, 62%);
+  }
+  @-webkit-keyframes fade {
+    from {
+      opacity: 0.1;
+    }
+    to {
+      opacity: 1;
+    }
+  }
+  @keyframes fade {
+    from {
+      opacity: 0.1;
+    }
+    to {
+      opacity: 1;
+    }
+  }
+  .container {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+  }
+  .popular {
+    display: inline-block;
+    width: 100%;
+    max-width: unset;
+    margin-top: 50px;
+  }
+  .popular .section_bg {
+    width: 100%;
+    height: 50%;
+    -o-object-fit: cover;
+       object-fit: cover;
+  }
+  .popular h1 {
+    display: block;
+    max-width: 100%;
+    font-size: 3.5rem;
+  }
+  .popular .readmore {
+    max-width: 100%;
+    font-size: 18px;
+    line-height: 1.9rem;
+  }
+  .new_section {
+    max-width: 100%;
+    margin: 50px 0px 65px 0px;
+  }
+  .trending_section {
+    display: flex;
+    flex-direction: column;
+    align-items: unset;
+    margin-bottom: 50px;
+  }
+  .trending_section .trading {
+    display: flex;
+    flex-direction: row;
+    -moz-column-gap: 5%;
+         column-gap: 5%;
+    margin-bottom: 4rem;
+  }
+  .trending_section .trading img {
+    width: 40%;
+    height: 50%;
+  }
+  .trending_section .trading .trading_content_box {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+  }
+  .trending_section .trading .trading_content_box h3 {
+    font-size: 2.8rem;
+  }
+  .trending_section .trading .trading_content_box h4 {
+    font-size: 2rem;
+    font-weight: 800;
+  }
+  .trending_section .trading .trading_content_box p {
+    font-size: 1.3rem;
+    color: hsl(236deg, 13%, 42%);
+    line-height: 1.8em;
+  }
+}
+@media (max-width: 545px) {
+  .trending_section {
+    display: flex;
+    flex-direction: column;
+    align-items: unset;
+    margin-bottom: 10px;
+  }
+  .trending_section .trading {
+    margin-bottom: 2rem;
+  }
+  .trending_section .trading .trading_content_box {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+  }
+  .trending_section .trading .trading_content_box h3 {
+    font-size: 1.8rem;
+  }
+  .trending_section .trading .trading_content_box h4 {
+    font-size: 1.1rem;
+    font-weight: 800;
+  }
+  .trending_section .trading .trading_content_box p {
+    font-size: 0.9rem;
+    color: hsl(236deg, 13%, 42%);
+    line-height: 1.8em;
+  }
+}/*# sourceMappingURL=style.css.map */
